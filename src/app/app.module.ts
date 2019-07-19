@@ -5,15 +5,15 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 import { Media } from '@ionic-native/media';
 import { File } from '@ionic-native/file';
-import { CargandoPage } from '../pages/cargando/cargando'
+//import { CargandoPage } from '../pages/cargando/cargando'
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-
+//import { NativePageTransitions } from '@ionic-native-page-transitions';
 @NgModule({
   declarations: [
     MyApp,
-    HomePage,
-    CargandoPage,
+    HomePage
+    //CargandoPage,
   ],
   imports: [
     BrowserModule,
@@ -23,14 +23,15 @@ import { HomePage } from '../pages/home/home';
   entryComponents: [
     MyApp,
     HomePage,
-    CargandoPage,
+    //CargandoPage,
   ],
   providers: [
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     Media,
-    File
+    File,
+  //  NativePageTransitions,
   ]
 })
 export class AppModule {}

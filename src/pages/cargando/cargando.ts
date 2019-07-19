@@ -17,7 +17,13 @@ export class CargandoPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
-
+  ngOnInit(){
+    setTimeout(() => {
+        // this.navCtrl.popToRoot();
+        // might try this instead
+        this.navCtrl.push('ResultadoPage');
+    }, 5000);
+}
   ionViewDidLoad() {
     console.log('ionViewDidLoad CargandoPage');
   }

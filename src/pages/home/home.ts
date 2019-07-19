@@ -33,8 +33,9 @@ export class HomePage {
 
   gotosecondpage(){
 
-    this.navCtrl.push(CargandoPage)
+    this.navCtrl.push('CargandoPage')
   }
+  
   startRecord() {
     if (this.platform.is('ios')) {
       this.fileName = 'record'+new Date().getDate()+new Date().getMonth()+new Date().getFullYear()+new Date().getHours()+new Date().getMinutes()+new Date().getSeconds()+'.m4a';
